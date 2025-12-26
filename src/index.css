@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-white antialiased;
+    background-color: #1A1A23;
+    /* Dark background matching screenshots */
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#B936F5] to-[#5C24FF];
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/10;
+  }
+}
